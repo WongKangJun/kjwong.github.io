@@ -1,0 +1,332 @@
+<!DOCTYPE HTML>
+<!-- Declares the document as HTML5 -->
+<html>
+  <head>
+    <!-- Page Title and Metadata -->
+    <title>Team 8 | Robotics Systems Students</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta name="keywords"
+      content="ROS1 Melodic, catkin_make, SLAM, GMapping, Cartographer, AMCL, TF2, Navigation Stack, move_base, Dijkstra Algorithm, LiDAR, IMU, Computer Vision, PixyCam, Object Tracking, Embedded C, C++, Python, Gazebo, RViz,  CI/CD, GitHub Actions, Linux, Ubuntu, System Integration, Autonomous Robots, Mobile Robotics, Communication, LIMO Robot, Litekit Robot, Mecanum Wheels">
+    <meta name="description"
+      content="Robotics portfolio by SIT’s Team 8: ROS1 integration, SLAM, real-time path-planning and CI-driven deployment of autonomous LIMO & Litekit robots.">
+
+    <!-- pulls "Strata" template -->
+    <link rel="stylesheet" href="assets/css/main.css" />
+
+    <!-- Custom Styles for Header, Section Text, Skills Tags, Media -->
+    <style>
+      /* Header background override */
+      #header { background:#000 !important; }
+
+      /* Remove header background image overlay */
+      #header:before { display:none !important; }
+
+      /* Set default text color for main content areas */
+      #one, #two, #three {
+        color: #000;
+      }
+
+      /* Enforce black text color for multiple elements */
+      #two h3, #two p, #one p, #one h2, #three h2, #three p,
+      #two h2, .labeled-icons li, .labeled-icons a, .actions .button {
+        color: #000;
+      }
+
+      #footer .labeled-icons li,
+      #footer .labeled-icons li h3 {
+        color: #fff;
+      }
+
+      
+      /* Skill tag layout */
+      .skills {
+        margin-top: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+
+      /* Style for each skill label */
+      .skills span {
+        padding: 0.4em 0.8em;
+        background: #f8f8f8;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+        font-size: 0.85rem;
+        color: #c00;
+        font-weight: 500;
+      }
+
+      /* Ensures images/videos scale uniformly */
+      .equal-media {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+      }
+    </style>
+  </head>
+
+  <body class="is-preload">
+    
+    <!-- ================= HEADER ================= -->
+    <header id="header">
+      <div class="inner">
+        <!-- Profile picture -->
+        <a href="#" class="image avatar"><img src="images/sam_avatar.jpg" alt="" /></a>
+        <!-- Team and description -->
+        <h1>
+          <strong>Team 8</strong><br />
+          Students of Robotics Systems in SIT<br />
+          (Singapore Institute of Technology)
+        </h1>
+      </div>
+    </header>
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <div id="main">
+
+      <!-- ========== SECTION ONE: ABOUT ME ========== -->
+      <section id="one">
+        <header class="major">
+          <h2>About me</h2>
+        </header>
+        <p>
+          Team 8 is a close-knit group of five engineers from the Singapore Institute of Technology who believe that great engineering starts with great teamwork and communication. We work together to build and refine robotics systems that just work.<br>
+          Our collaborative spirit extends from the earliest stages of planning to the final field tests. We combine diverse perspectives and skillsets to tackle challenges, always focusing on clear communication and mutual support. We take pride in our ability to merge data, refine controls, and test every system thoroughly—not just because it’s technically sound, but because it’s the way we ensure everyone’s voice is heard and every idea has a chance to shine.<br>
+          For us, the real innovation is in how we work together—reviewing each other’s work, sharing feedback openly, and making sure we’re always aligned on our goals. That’s what makes our robots reliable and easy to operate, whether they’re working locally or remotely.<br>
+          At the heart of it, we’re not just engineers—we’re partners who believe that solid communication and a shared commitment to quality make the difference between a system that’s good and one that’s truly great.
+        </p>
+        <!-- Button linking to resume -->
+        <ul class="actions">
+          <li><a href="resume.html" class="button" style="color: #000;">Resume</a></li>
+        </ul>
+      </section>
+
+      <section id="two">
+        <header class="major">
+          <h2>Why ROS?</h2>
+        </header>
+        <p>
+          • De-facto robotics middleware: publish/subscribe nodes, standard .msg contracts<br>
+          • 26 k+ open-source packages & drivers for rapid prototyping<br>
+          • rviz / rosbag / Gazebo tool-chain slashes debug & sim time<br>
+          • Cross-platform C++ & Python APIs → easy hand-off to ROS 2 for real-time production
+        </p>
+      </section>
+      
+      
+      <!-- ========== SECTION TWO: PROJECTS ========== -->
+      <section id="two">
+        <header class="major">
+          <h2>Projects</h2>
+        </header>
+        <div class="row">
+
+          <!-- ===== Project 9: ROS1 Gazebo and RViz Integration===== -->
+          <article class="col-6 col-12-xsmall work-item">
+            <div style="display: flex; gap: 10px;">
+              <a href="images/fulls/gazebo1.png" style="flex: 1;">
+                <img src="images/thumbs/gazebo1.png" alt="Gazebo Image 1" class="equal-media" />
+              </a>
+              <a href="images/fulls/gazebo2.png" style="flex: 1;">
+                <img src="images/thumbs/gazebo2.png" alt="Gazebo Image 2" class="equal-media" />
+              </a>
+            </div>
+            <h3>ROS1 Gazebo and RViz Integration</h3>
+            <p>
+              Developed a simulated robotics environment using ROS1, Gazebo, and RViz for testing perception and control algorithms.<br>
+              • Configured Gazebo to simulate a robot model with realistic physics and sensor data ( LIDAR, IMU, camera).<br>
+              • Integrated Gazebo plugins to publish sensor and joint state data to ROS topics.<br>
+              • Launched robot controllers and navigation stack in ROS for motion planning and control.<br>
+              • Used RViz to visualize the robot model, sensor data, and coordinate frames in real-time.<br>
+                – Displayed laser scans, 3D environment, and odometry data for debugging perception pipelines<br>
+                – Monitored TF tree to verify sensor alignment and transform consistency<br>
+                – Used interactive markers for sending navigation goals and observing robot response
+            </p>
+            <div class="skills">
+              <span>Gazebo Simulator</span><span>Physics-based simulation</span><span>Sensor simulation (LIDAR, IMU, camera)</span><span>Robot model (URDF / SDF)</span><span>ROS-Gazebo integration</span><span>Gazebo plugins (sensor/actuator plugins)</span><span>Environment modeling</span><span>Simulated robot control</span><span>ROS Control / Controller Manager</span><span>Simulation of autonomous navigation</span>
+            </div>
+          </article>
+
+
+          <!-- ===== Project 4: Gmapping ===== -->
+          <article class="col-6 col-12-xsmall work-item">
+            <a href="images/fulls/gmap.png" class="image fit thumb">
+              <img src="images/thumbs/gmap.png" alt="" class="equal-media" />
+            </a>
+            <h3>Gmapping (SLAM)</h3>
+            <p>
+              Developed and launched gmapping node for real-time Simultaneous Localization and Mapping (SLAM).<br>
+              • Utilized laser scans (/scan) and odometry data (/odom) to build 2D occupancy grid maps.<br>
+              • Generated static map files (.pgm + .yaml) for future localization and path planning.
+            </p>
+            <div class="skills">
+              <span>Occupancy Grid Map</span><span>Laser Scan (/scan)</span><span>Odometry (/odom)</span><span>Pose Estimation</span><span>Map Creation</span><span>Map_server</span><span>gmapping.launch</span><span>Particle Filter (mapping)</span>
+            </div>
+          </article>
+
+          <!-- ===== Project 5: AMCL ===== -->
+          <article class="col-6 col-12-xsmall work-item">
+            <a href="images/fulls/amcl.png" class="image fit thumb">
+              <img src="images/thumbs/amcl.png" alt="" class="equal-media" />
+            </a>
+            <h3>AMCL (Localization)</h3>
+            <p>
+              Configured and tuned amcl (Adaptive Monte Carlo Localization) for real-time pose estimation within static maps.<br>
+              • Integrated laser-based particle filter to maintain accurate global pose (/amcl_pose).<br>
+              • Tuned parameters:<br>
+                - odom_model_type: differential drive kinematics.<br>
+                - odom_alpha1–4: motion noise parameters.<br>
+                - min/max_particles: performance and accuracy tradeoffs.
+            </p>
+            <div class="skills">
+              <span>Particle Filter</span><span>Pose Estimation</span><span>Initial Pose (/initialpose)</span><span>Global Localization</span><span>Laser Model (laser_z_hit, laser_z_rand, …)</span><span>Odom Model (odom_alpha1, odom_alpha2, …)</span><span>/amcl_pose</span><span>Frame IDs (map, odom, base_link)</span><span>Convergence (particles cluster tightly)</span>
+            </div>
+          </article>
+
+          <!-- ===== Project 6: move_base ===== -->
+          <article class="col-6 col-12-xsmall work-item">
+            <a href="images/fulls/move_base.png" class="image fit thumb">
+              <img src="images/thumbs/move_base.png" alt="" class="equal-media" />
+            </a>
+            <h3>move_base (Path Planning & Control)</h3>
+            <p>
+              Orchestrated global and local planners via move_base node:<br>
+              • Global Planner: navfn / global_planner for static map-based path computation.<br>
+              • Local Planner: dwa_local_planner for dynamic obstacle avoidance and smooth local motion.<br>
+              Configured:<br>
+              • base_local_planner_params.yaml: linear/rotational velocity limits, acceleration limits, goal tolerances.<br>
+              • costmap_common_params.yaml: robot footprint and inflation radius.<br>
+              • global_costmap_params.yaml: global map configuration.<br>
+              • local_costmap_params.yaml: rolling window configuration for dynamic obstacle avoidance.<br>
+              • Enabled recovery behaviours to autonomously clear bad costmaps and rotate in-place if stuck.
+            </p>
+            <div class="skills">
+              <span>Global Planner (navfn, global_planner, carrot_planner)</span><span>Local Planner (DWA, TEB, MPC)</span><span>Costmaps (global_costmap, local_costmap)</span><span>Inflation Layer</span><span>cmd_vel (velocity commands)</span><span>Recovery Behaviours (clear costmap, rotate)</span><span>Controller_Frequency</span><span>Goal Tolerances (xy_goal_tolerance, yaw_goal_tolerance)</span><span>Path Following (pdist_scale, gdist_scale)</span>
+            </div>
+          </article>
+
+          <!-- ===== Project 7: Actionlib ===== -->
+          <article class="col-6 col-12-xsmall work-item">
+            <a href="images/fulls/actionlib.png" class="image fit thumb">
+              <img src="images/thumbs/actionlib.png" alt="" class="equal-media" />
+            </a>
+            <h3>Actionlib-based Goal Management</h3>
+            <p>
+              Integrated ROS actionlib framework to manage long-running navigation tasks via the move_base Action API.<br>
+              • Configured MoveBaseAction clients for sending target poses and dynamically receiving feedback and goal status updates.<br>
+              • Leveraged actionlib’s goal cancelation and feedback mechanisms for real-time monitoring and adjustments of the robot’s navigation.
+            </p>
+            <div class="skills">
+              <span>Action Server / Action Client</span><span>MoveBaseAction</span><span>Goal / Feedback / Result / Status</span><span>Long-Running Tasks</span><span>Cancellation</span><span>SimpleActionClient</span><span>Feedback messages (/move_base/feedback)</span><span>Goal Messages (/move_base/goal)</span><span>Status Updates (/move_base/status)</span>
+            </div>
+          </article>
+
+          <!-- ===== Project 8: ROS1===== -->
+          <article class="col-6 col-12-xsmall work-item">
+            <a href="images/fulls/ROS1.png" class="image fit thumb">
+              <img src="images/thumbs/ROS1.png" alt="" class="equal-media" />
+            </a>
+            <h3>ROS1 Fundamentals and Workspace Proficiency</h3>
+            <p>
+              Mastered foundational ROS1 operations, covering the full lifecycle of creating, launching, and debugging ROS packages and nodes.<br>
+              • Developed and built ROS packages using the catkin build system, with proper dependency handling and structured workspace design.<br>
+              • Created and managed ROS nodes, topics, services, and parameters, enabling real-time inter-process communication.<br>
+              • Launched multi-node systems using .launch files and monitored activity with tools like rqt_graph and rqt_console.
+            </p>
+            <div class="skills">
+              <span>ROS1</span><span>Catkin</span><span>CLI</span><span>Debugging</span><span>rqt</span><span>Inter-process Communication</span><span>Ubuntu</span><span>Workspace Configuration</span><span>Linux</span>
+            </div>
+          </article>
+
+
+          <!-- ===== Project 3: TF2 Simulation ===== -->
+          <article class="col-6 col-12-xsmall work-item">
+            <video class="image fit thumb equal-media" controls muted autoplay loop>
+              <source src="images/projects/tf2_intro.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <h3>TF2 TurtleBot Simulation</h3>
+            <p>
+              Built a ROS tf2 setup in turtlesim to simulate leader-follower behavior.<br>
+              • Used broadcaster to publish turtle1’s transform.<br>
+              • Implemented listener to control turtle2.<br>
+              • Verified system behavior using key ROS tools:<br>
+                – tf_echo to monitor live distance and orientation between turtles<br>
+                – view_frames to generate a static transform tree diagram<br>
+                – RViz to visually inspect spatial frame positions and orientations
+            </p>
+            <div class="skills">
+              <span>ROS1</span><span>TF2</span><span>Broadcaster</span><span>Listener</span><span>Coordinate Frames</span><span>Leader-follower</span><span>Real-time control</span><span>Python</span><span>Transform tree</span>
+            </div>
+          </article>
+
+
+
+        </div>
+      </section>
+
+      <!-- ========== SECTION THREE: CONTACT INFO ========== -->
+      <section id="three">
+        <header class="major">
+          <h2>Ongoing Project</h2>
+        </header>
+        <div class="row">
+        <!-- ===== Project 1: LIMO Bot ===== -->
+          <article class="col-6 col-12-xsmall work-item">  <!-- Scale to fit -->
+            <a href="images/fulls/LIMObot.png" class="image fit thumb">
+              <img src="images/thumbs/LIMObot.png" alt="" class="equal-media" />
+            </a>
+            <h3>Autonomous Navigation and Obstacle Construction</h3>
+            <p>
+              Built an Obstacle course and programmed a ROS based Autonomous LIMO Robot to operate in a simulated indoor environment representing the Changi Airport.<br>
+              • Designed and constructed the Obstacle course with high fidelity and clean workmanship, referencing real layouts for spatial accuracy of Changi Airport Terminal 3.<br>
+              • Implemented SLAM using GMapping and Cartographer.<br>
+              • Used Dijkstra’s algorithm for global pathfinding.<br>
+              • Integrated AMCL for localisation and move_base for continuous execution.<br>
+              • Enabled dynamic obstacle handling and LiDAR-based detection.<br>
+              • Aligned arena aesthetics with navigation requirements.
+            </p>
+            <div class="skills">
+              <span>ROS1</span><span>SLAM</span><span>AMCL</span><span>Ubuntu</span><span>CLI</span><span>move_base</span><span>GMapping</span><span>Gazebo</span><span>Cartographer</span><span>LiDAR</span><span>Indoor Navigation</span><span>Dynamic Obstacle Avoidance</span><span>Robot Localisation</span><span>Dynamic Recovery Behaviour</span><span>Linux</span>
+            </div>
+          </article>
+
+    </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer id="footer">
+        <div class="row">
+          <div class="col-12">
+            <ul class="labeled-icons">
+              <li>
+                <h3 class="icon solid fa-home"><span class="label">Location</span></h3>
+                1 Punggol Coast Road, Singapore 828608
+              </li>
+              <li>
+                <h3 class="icon solid fa-phone"><span class="label">Phone</span></h3>
+                +65 88696083
+              </li>
+              <li>
+                <h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
+                2401146@sit.singaporetech.edu.sg
+              </li>
+            </ul>
+          </div>
+        </div>
+        <ul class="copyright">
+          <li>&copy; Team 8</li>
+          <li>Design: <a href="https://html5up.net/strata">HTML5 UP Strata</a></li>
+        </ul>
+    </footer>
+
+    <!-- ================= SCRIPTS ================= -->
+    <script src="assets/js/jquery.min.js"></script>           <!-- Essential for Strata -->
+    <script src="assets/js/browser.min.js"></script>          <!-- Feature-detection helper. -->
+    <script src="assets/js/breakpoints.min.js"></script>      <!-- Handles media-query breakpoints -->
+    <script src="assets/js/util.js"></script>                 <!-- Utility helpers (scroll, polyfills, etc.) -->
+    <script src="assets/js/main.js"></script>                 <!-- Template logic: lightbox, scroll-effects, etc. -->
+  </body>
+</html>
