@@ -331,25 +331,16 @@
   </div>
 </article>
 
-<!-- ===== Project 2.1: Arena Project Elements (with captions) ===== -->
+<!-- ===== Carousel for Arena Elements ===== -->
 <article class="col-6 col-12-xsmall work-item">
-  <div style="display: flex; gap: 10px; flex-wrap: wrap; justify-content: center;">
-    
-    <div style="flex: 1; text-align: center;">
-      <img src="images/projects/Counter.jfif" alt="Airport Counter" class="equal-media" />
-      <p style="margin-top: 0.5rem; font-size: 0.9rem;">Check-in Counter</p>
+  <div style="position: relative; max-width: 100%; overflow: hidden;">
+    <div id="carousel" style="display: flex; transition: transform 0.5s ease;">
+      <img src="images/projects/Counter.jfif" class="equal-media" alt="Check-in Counter">
+      <img src="images/projects/Floral.jfif" class="equal-media" alt="Floral Sculpture">
+      <img src="images/projects/Daisy.jfif" class="equal-media" alt="Daisy Windmill">
     </div>
-
-    <div style="flex: 1; text-align: center;">
-      <img src="images/projects/Floral.jfif" alt="Floral Sculpture" class="equal-media" />
-      <p style="margin-top: 0.5rem; font-size: 0.9rem;">Floral Sculpture Obstacle</p>
-    </div>
-
-    <div style="flex: 1; text-align: center;">
-      <img src="images/projects/Daisy.jfif" alt="Daisy Windmill" class="equal-media" />
-      <p style="margin-top: 0.5rem; font-size: 0.9rem;">Daisy Windmill</p>
-    </div>
-
+    <button onclick="prevSlide()" style="position:absolute; left:10px; top:45%; z-index:2;">&#10094;</button>
+    <button onclick="nextSlide()" style="position:absolute; right:10px; top:45%; z-index:2;">&#10095;</button>
   </div>
 
   <h3>Arena Project Elements</h3>
@@ -358,11 +349,24 @@
     • They are static and strategically placed to create dead ends.<br>
     • Purpose is to show LIMO capability of triggering autonomous recovery behaviour (reverse).
   </p>
-  <div class="skills">
-    <span>Obstacle Design</span><span>Visual Aesthetics</span><span>3D Printed Props</span><span>Interactive Arena</span><span>ROS Navigation Testing</span>
-  </div>
 </article>
 
+<script>
+  let index = 0;
+  const carousel = document.getElementById("carousel");
+  const total = carousel.children.length;
+
+  function showSlide(i) {
+    index = (i + total) % total;
+    carousel.style.transform = `translateX(-${index * 100}%)`;
+  }
+
+  function nextSlide() { showSlide(index + 1); }
+  function prevSlide() { showSlide(index - 1); }
+</script>
+
+
+          
 <!-- ===== Project 3: LIMO Bot Navigation ===== -->
 <article class="col-6 col-12-xsmall work-item">
   <video class="image fit thumb equal-media" controls muted autoplay loop>
