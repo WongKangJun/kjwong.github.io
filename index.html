@@ -208,43 +208,6 @@
             </div>
           </article>
 
-          <!-- ===== Project 6: move_base ===== -->
-          <article class="col-6 col-12-xsmall work-item">
-            <a href="images/fulls/move_base.png" class="image fit thumb">
-              <img src="images/thumbs/move_base.png" alt="" class="equal-media" />
-            </a>
-            <h3>move_base (Path Planning & Control)</h3>
-            <p>
-              Orchestrated global and local planners via move_base node:<br>
-              • Global Planner: navfn / global_planner for static map-based path computation.<br>
-              • Local Planner: dwa_local_planner for dynamic obstacle avoidance and smooth local motion.<br>
-              Configured:<br>
-              • base_local_planner_params.yaml: linear/rotational velocity limits, acceleration limits, goal tolerances.<br>
-              • costmap_common_params.yaml: robot footprint and inflation radius.<br>
-              • global_costmap_params.yaml: global map configuration.<br>
-              • local_costmap_params.yaml: rolling window configuration for dynamic obstacle avoidance.<br>
-              • Enabled recovery behaviours to autonomously clear bad costmaps and rotate in-place if stuck.
-            </p>
-            <div class="skills">
-              <span>Global Planner (navfn, global_planner, carrot_planner)</span><span>Local Planner (DWA, TEB, MPC)</span><span>Costmaps (global_costmap, local_costmap)</span><span>Inflation Layer</span><span>cmd_vel (velocity commands)</span><span>Recovery Behaviours (clear costmap, rotate)</span><span>Controller_Frequency</span><span>Goal Tolerances (xy_goal_tolerance, yaw_goal_tolerance)</span><span>Path Following (pdist_scale, gdist_scale)</span>
-            </div>
-          </article>
-
-          <!-- ===== Project 7: Actionlib ===== -->
-          <article class="col-6 col-12-xsmall work-item">
-            <a href="images/fulls/actionlib.png" class="image fit thumb">
-              <img src="images/thumbs/actionlib.png" alt="" class="equal-media" />
-            </a>
-            <h3>Actionlib-based Goal Management</h3>
-            <p>
-              Integrated ROS actionlib framework to manage long-running navigation tasks via the move_base Action API.<br>
-              • Configured MoveBaseAction clients for sending target poses and dynamically receiving feedback and goal status updates.<br>
-              • Leveraged actionlib’s goal cancelation and feedback mechanisms for real-time monitoring and adjustments of the robot’s navigation.
-            </p>
-            <div class="skills">
-              <span>Action Server / Action Client</span><span>MoveBaseAction</span><span>Goal / Feedback / Result / Status</span><span>Long-Running Tasks</span><span>Cancellation</span><span>SimpleActionClient</span><span>Feedback messages (/move_base/feedback)</span><span>Goal Messages (/move_base/goal)</span><span>Status Updates (/move_base/status)</span>
-            </div>
-          </article>
 
           <!-- ===== Project 8: ROS1===== -->
           <article class="col-6 col-12-xsmall work-item">
