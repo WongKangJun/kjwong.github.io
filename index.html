@@ -310,7 +310,10 @@
               • RGB and depth images (bottom left) give a live camera and 3D view of the arena.
             </p>
             <div class="skills">
-              <span>ROS1</span><span>SLAM</span><span>AMCL</span><span>Ubuntu</span><span>CLI</span><span>move_base</span><span>GMapping</span><span>Gazebo</span><span>Cartographer</span><span>LiDAR</span><span>Indoor Navigation</span><span>Dynamic Obstacle Avoidance</span><span>Robot Localisation</span><span>Dynamic Recovery Behaviour</span><span>Linux</span>
+ <span>ROS1</span><span>SLAM</span><span>RTAB-Map</span><span>move_base</span>
+  <span>GMapping</span><span>LiDAR</span><span>Obstacle Avoidance</span>
+  <span>Localisation</span><span>Recovery Behaviour</span>
+              
             </div>
           </article>
           
@@ -331,40 +334,28 @@
   </div>
 </article>
 
-<!-- ===== Carousel for Arena Elements ===== -->
+<!-- ===== Project: Arena Project Elements (Video) ===== -->
 <article class="col-6 col-12-xsmall work-item">
-  <div style="position: relative; max-width: 100%; overflow: hidden;">
-    <div id="carousel" style="display: flex; transition: transform 0.5s ease;">
-      <img src="images/projects/Counter.jfif" class="equal-media" alt="Check-in Counter">
-      <img src="images/projects/Floral.jfif" class="equal-media" alt="Floral Sculpture">
-      <img src="images/projects/Daisy.jfif" class="equal-media" alt="Daisy Windmill">
-    </div>
-    <button onclick="prevSlide()" style="position:absolute; left:10px; top:45%; z-index:2;">&#10094;</button>
-    <button onclick="nextSlide()" style="position:absolute; right:10px; top:45%; z-index:2;">&#10095;</button>
-  </div>
+  <video class="image fit thumb equal-media" controls muted autoplay loop>
+    <source src="images/projects/elements.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
 
   <h3>Arena Project Elements</h3>
   <p>
-    These elements simulate visual and functional components of the Changi T3-inspired arena:<br>
+    These elements simulate visual and navigation elements of the Changi T3-inspired arena:<br>
+    • Video describes key elements.<br>
     • They are static and strategically placed to create dead ends.<br>
-    • Purpose is to show LIMO capability of triggering autonomous recovery behaviour (reverse).
+    • Purpose is to demonstrate LIMO's ability to trigger its autonomous recovery behaviour (reverse).
   </p>
+  <div class="skills">
+  <span>Visual Aesthetics</span>
+  <span>Obstacle Setup</span>
+  <span>Recovery Behaviour</span>
+  <span>LiDAR Sensing</span>
+  <span>Changi Airport Terminal 3</span>
+  </div>
 </article>
-
-<script>
-  let index = 0;
-  const carousel = document.getElementById("carousel");
-  const total = carousel.children.length;
-
-  function showSlide(i) {
-    index = (i + total) % total;
-    carousel.style.transform = `translateX(-${index * 100}%)`;
-  }
-
-  function nextSlide() { showSlide(index + 1); }
-  function prevSlide() { showSlide(index - 1); }
-</script>
-
 
           
 <!-- ===== Project 3: LIMO Bot Navigation ===== -->
@@ -380,7 +371,9 @@
     • Uses both global and local planning to move smoothly and safely.
   </p>
   <div class="skills">
- <span>Navigation</span><span>ROS1</span><span>SLAM</span><span>move_base</span><span>AMCL</span>  
+<span>Navigation</span><span>ROS1</span><span>SLAM</span>
+  <span>move_base</span><span>DWA</span><span>Dijkstra</span>
+  <span>Tracked Wheels</span><span>Local Planner</span><span>Global Planner</span>    
   </div>
 </article>
 
