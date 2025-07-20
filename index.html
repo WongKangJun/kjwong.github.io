@@ -146,6 +146,48 @@
         </header>
         <div class="row">
 
+
+   <!-- ===== Project 8: ROS1===== -->
+          <article class="col-6 col-12-xsmall work-item">
+            <a href="images/fulls/ROS1.png" class="image fit thumb">
+              <img src="images/thumbs/ROS1.png" alt="" class="equal-media" />
+            </a>
+            <h3>ROS1 Fundamentals and Workspace Proficiency</h3>
+            <p>
+              Gained hands on experience with ROS1 features, from creating, launching, and debugging ROS packages and nodes.<br>
+              • Built ROS packages using the catkin build system and managed dependencies properly.<br>
+              • Created and used nodes, topics, services, and parameters simulated in TurtleSim.<br>
+              • Monitoring tools like rqt_graph and rqt_console.
+            </p>
+            <div class="skills">
+              <span>ROS1</span><span>Catkin</span><span>CLI</span><span>Debugging</span><span>rqt</span><span>Inter-process Communication</span><span>Ubuntu</span><span>Workspace Configuration</span><span>Linux</span>
+            </div>
+          </article>
+
+
+    <!-- ===== Project 3: TF2 Simulation ===== -->
+          <article class="col-6 col-12-xsmall work-item">
+            <video class="image fit thumb equal-media" controls muted autoplay loop>
+              <source src="images/projects/tf2_intro.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <h3>TF2 TurtleBot Simulation</h3>
+            <p>
+              Built a ROS tf2 setup in turtlesim to simulate leader-follower behavior.<br>
+              • Used broadcaster to publish turtle1’s transform.<br>
+              • Implemented listener to control turtle2.<br>
+              • Verified system behavior using key ROS tools:<br>
+                – tf_echo to monitor live distance and orientation between turtles<br>
+                – view_frames to generate a static transform tree diagram<br>
+                – RViz to visually inspect spatial frame positions and orientations
+            </p>
+            <div class="skills">
+              <span>ROS1</span><span>TF2</span><span>Broadcaster</span><span>Listener</span><span>Coordinate Frames</span><span>Leader-follower</span><span>Real-time control</span><span>Python</span><span>Transform tree</span>
+            </div>
+          </article>
+
+
+
           <!-- ===== Project 9: ROS1 Gazebo and RViz Integration===== -->
           <article class="col-6 col-12-xsmall work-item">
             <div style="display: flex; gap: 10px;">
@@ -158,14 +200,12 @@
             </div>
             <h3>ROS1 Gazebo and RViz Integration</h3>
             <p>
-              Developed a simulated robotics environment using ROS1, Gazebo, and RViz for testing perception and control algorithms.<br>
-              • Configured Gazebo to simulate a robot model with realistic physics and sensor data ( LIDAR, IMU, camera).<br>
-              • Integrated Gazebo plugins to publish sensor and joint state data to ROS topics.<br>
-              • Launched robot controllers and navigation stack in ROS for motion planning and control.<br>
-              • Used RViz to visualize the robot model, sensor data, and coordinate frames in real-time.<br>
-                – Displayed laser scans, 3D environment, and odometry data for debugging perception pipelines<br>
-                – Monitored TF tree to verify sensor alignment and transform consistency<br>
-                – Used interactive markers for sending navigation goals and observing robot response
+            Followed the TurtleBot3 tutorial to simulate a robot in Gazebo and visualize its data in RViz.<br>
+            • Set up a robot model in Gazebo with simulated sensors like LiDAR and camera.<br>
+            • Used plugins to publish sensor and joint data to ROS topics.<br>
+            • Launched controllers and navigation stack to move the robot in simulation.<br>
+            • Used RViz to view laser scans, 3D environment, and check coordinate frames.<br>
+            • Tested sending navigation goals and monitored the robot's movement in real time.
             </p>
             <div class="skills">
               <span>Gazebo Simulator</span><span>Physics-based simulation</span><span>Sensor simulation (LIDAR, IMU, camera)</span><span>Robot model (URDF / SDF)</span><span>ROS-Gazebo integration</span><span>Gazebo plugins (sensor/actuator plugins)</span><span>Environment modeling</span><span>Simulated robot control</span><span>ROS Control / Controller Manager</span><span>Simulation of autonomous navigation</span>
@@ -180,9 +220,9 @@
             </a>
             <h3>Gmapping (SLAM)</h3>
             <p>
-              Developed and launched gmapping node for real-time Simultaneous Localization and Mapping (SLAM).<br>
-              • Utilized laser scans (/scan) and odometry data (/odom) to build 2D occupancy grid maps.<br>
-              • Generated static map files (.pgm + .yaml) for future localization and path planning.
+               Followed the TurtleBot3 tutorial to learn how to perform basic SLAM using Gmapping.<br>
+              • Used laser scan (/scan) and odometry (/odom) data to create a 2D map of the environment.<br>
+              • Saved the map as image and YAML files for future navigation and localization tests.
             </p>
             <div class="skills">
               <span>Occupancy Grid Map</span><span>Laser Scan (/scan)</span><span>Odometry (/odom)</span><span>Pose Estimation</span><span>Map Creation</span><span>Map_server</span><span>gmapping.launch</span><span>Particle Filter (mapping)</span>
@@ -207,47 +247,6 @@
               <span>Particle Filter</span><span>Pose Estimation</span><span>Initial Pose (/initialpose)</span><span>Global Localization</span><span>Laser Model (laser_z_hit, laser_z_rand, …)</span><span>Odom Model (odom_alpha1, odom_alpha2, …)</span><span>/amcl_pose</span><span>Frame IDs (map, odom, base_link)</span><span>Convergence (particles cluster tightly)</span>
             </div>
           </article>
-
-
-          <!-- ===== Project 8: ROS1===== -->
-          <article class="col-6 col-12-xsmall work-item">
-            <a href="images/fulls/ROS1.png" class="image fit thumb">
-              <img src="images/thumbs/ROS1.png" alt="" class="equal-media" />
-            </a>
-            <h3>ROS1 Fundamentals and Workspace Proficiency</h3>
-            <p>
-              Mastered foundational ROS1 operations, covering the full lifecycle of creating, launching, and debugging ROS packages and nodes.<br>
-              • Developed and built ROS packages using the catkin build system, with proper dependency handling and structured workspace design.<br>
-              • Created and managed ROS nodes, topics, services, and parameters, enabling real-time inter-process communication.<br>
-              • Launched multi-node systems using .launch files and monitored activity with tools like rqt_graph and rqt_console.
-            </p>
-            <div class="skills">
-              <span>ROS1</span><span>Catkin</span><span>CLI</span><span>Debugging</span><span>rqt</span><span>Inter-process Communication</span><span>Ubuntu</span><span>Workspace Configuration</span><span>Linux</span>
-            </div>
-          </article>
-
-
-          <!-- ===== Project 3: TF2 Simulation ===== -->
-          <article class="col-6 col-12-xsmall work-item">
-            <video class="image fit thumb equal-media" controls muted autoplay loop>
-              <source src="images/projects/tf2_intro.mp4" type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-            <h3>TF2 TurtleBot Simulation</h3>
-            <p>
-              Built a ROS tf2 setup in turtlesim to simulate leader-follower behavior.<br>
-              • Used broadcaster to publish turtle1’s transform.<br>
-              • Implemented listener to control turtle2.<br>
-              • Verified system behavior using key ROS tools:<br>
-                – tf_echo to monitor live distance and orientation between turtles<br>
-                – view_frames to generate a static transform tree diagram<br>
-                – RViz to visually inspect spatial frame positions and orientations
-            </p>
-            <div class="skills">
-              <span>ROS1</span><span>TF2</span><span>Broadcaster</span><span>Listener</span><span>Coordinate Frames</span><span>Leader-follower</span><span>Real-time control</span><span>Python</span><span>Transform tree</span>
-            </div>
-          </article>
-
 
 
         </div>
