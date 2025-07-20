@@ -160,7 +160,7 @@
               • Monitoring tools like rqt_graph and rqt_console.
             </p>
             <div class="skills">
-              <span>ROS1</span><span>Catkin</span><span>CLI</span><span>Debugging</span><span>rqt</span><span>Inter-process Communication</span><span>Ubuntu</span><span>Workspace Configuration</span><span>Linux</span>
+              <span>ROS1</span><span>Catkin</span><span>Workspace</span><span>Packages</span><span>Programming</span><span>Inter-process Communication</span><span>Ubuntu</span><span>ROS commands</span><span>Linux</span>
             </div>
           </article>
 
@@ -188,7 +188,7 @@
 
 
 
-          <!-- ===== Project 9: Turtlebot3 Gazebo===== -->
+          <!-- ===== Project 9: TurtleBot3 Gazebo===== -->
           <article class="col-6 col-12-xsmall work-item">
             <div style="display: flex; gap: 10px;">
               <a href="images/fulls/gazebo1.png" style="flex: 1;">
@@ -198,7 +198,7 @@
                 <img src="images/thumbs/gazebo2.png" alt="Gazebo Image 2" class="equal-media" />
               </a>
             </div>
-            <h3>Turtlebot3 Gazebo</h3>
+            <h3>TurtleBot3 Gazebo</h3>
             <p>
             Followed the TurtleBot3 tutorial to simulate a robot in Gazebo and visualize its data in RViz.<br>
             • Set up a robot model in Gazebo with simulated sensors like LiDAR and camera.<br>
@@ -208,17 +208,22 @@
             • Tested sending navigation goals and monitored the robot's movement in real time.
             </p>
             <div class="skills">
-              <span>Gazebo Simulator</span><span>Physics-based simulation</span><span>Sensor simulation (LIDAR, IMU, camera)</span><span>Robot model (URDF / SDF)</span><span>ROS-Gazebo integration</span><span>Gazebo plugins (sensor/actuator plugins)</span><span>Environment modeling</span><span>Simulated robot control</span><span>ROS Control / Controller Manager</span><span>Simulation of autonomous navigation</span>
+  <span>Gazebo</span>
+  <span>TurtleBot3 Burger</span>
+  <span>Simulated LiDAR</span>
+  <span>move_base</span>
+  <span>Simulated Robot Control</span>
+  <span>ROS1 Navigation Stack</span>         
             </div>
           </article>
 
 
-          <!-- ===== Project 4: Turtlebot3 SLAM ===== -->
+          <!-- ===== Project 4: TurtleBot3 SLAM ===== -->
           <article class="col-6 col-12-xsmall work-item">
             <a href="images/fulls/gmap.png" class="image fit thumb">
               <img src="images/thumbs/gmap.png" alt="" class="equal-media" />
             </a>
-            <h3>Turtlebot3 SLAM</h3>
+            <h3>TurtleBot3 SLAM</h3>
             <p>
                Followed the TurtleBot3 tutorial to learn how to perform basic SLAM using Gmapping.<br>
               • Used laser scan (/scan) and odometry (/odom) data to create a 2D map of the environment.<br>
@@ -229,22 +234,26 @@
             </div>
           </article>
 
-          <!-- ===== Project 5: Turtlebot3 Navigation ===== -->
+          <!-- ===== Project 5: TurtleBot3 Navigation ===== -->
           <article class="col-6 col-12-xsmall work-item">
             <a href="images/fulls/amcl.png" class="image fit thumb">
               <img src="images/thumbs/amcl.png" alt="" class="equal-media" />
             </a>
-            <h3>Turtlebot3 Navigation</h3>
+            <h3>TurtleBot3 Navigation</h3>
             <p>
-              Configured and tuned amcl (Adaptive Monte Carlo Localization) for real-time pose estimation within static maps.<br>
-              • Integrated laser-based particle filter to maintain accurate global pose (/amcl_pose).<br>
-              • Tuned parameters:<br>
-                - odom_model_type: differential drive kinematics.<br>
-                - odom_alpha1–4: motion noise parameters.<br>
-                - min/max_particles: performance and accuracy tradeoffs.
+              Used AMCL (Adaptive Monte Carlo Localization) to localize the TurtleBot3 within a pre-built map.<br>
+              • Configured AMCL parameters for accurate pose estimation using a particle filter.<br>
+              • Tested localization by setting initial pose and observing robot alignment with the global map in RViz.
             </p>
             <div class="skills">
-              <span>Particle Filter</span><span>Pose Estimation</span><span>Initial Pose (/initialpose)</span><span>Global Localization</span><span>Laser Model (laser_z_hit, laser_z_rand, …)</span><span>Odom Model (odom_alpha1, odom_alpha2, …)</span><span>/amcl_pose</span><span>Frame IDs (map, odom, base_link)</span><span>Convergence (particles cluster tightly)</span>
+<span>AMCL</span>
+<span>Pose Estimation</span>
+<span>ROS1 TurtleBot3</span>
+<span>Particle Filter</span>
+<span>Laser Scan</span>
+<span>Odometry</span>
+<span>Localization</span>
+<span>/amcl_pose</span>
             </div>
           </article>
 
