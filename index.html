@@ -109,11 +109,11 @@
   </p>
 
   <p>
-    My current project involves developing a ROS1-based autonomous robot using the AgileX LIMO platform. The system implements SLAM with move_base for continuous localization and path planning, and is tested within a custom-built arena inspiried Changi Airport Terminal 3. This setup is used to evaluate mapping accuracy, obstacle handling, and overall system performance.
+    My current project involves developing a ROS1-based autonomous robot using the AgileX LIMO platform. It is tested within a custom-built arena inspiried Changi Airport Terminal 3. The system uses SLAM for real-time mapping and localisation while move_base handles global and local path planning for autonomous navigation. This setup is used to evaluate mapping accuracy, obstacle handling, and overall system performance.
   </p>
 
   <p>
-    This portfolio showcases my technical competency with ROS1, highlighting what makes ROS a powerful tool for robotics development.  It documents my journey from foundational ROS1 works to a full project, with each section accompanied by relevant technical keywords. This is to guide both technical readers and search engines through the scope and depth of my work. This portfolio concludes by framing the project within a systems approach context— showing how this project ties back to real-world deployment scenario.
+    This portfolio showcases my technical competency with ROS1, highlighting what makes ROS a powerful tool for robotics development. It documents my journey from foundational ROS1 works to a full project, with each section accompanied by relevant technical keywords. This is to guide both technical readers and search engines through the scope and depth of my work. This portfolio concludes by framing the project within a systems approach context— showing how this project ties back to real-world deployment scenario.
   </p>
 
   <P>
@@ -125,19 +125,7 @@
           <li><a href="resume.html" class="button" style="color: #000;">Resume</a></li>
         </ul>
       </section>
-
-<section id="expertise">
-  <header class="major">
-    <h2>Technical Skills</h2>
-  </header>
-  <p>
-    • Electrical Engineering<br>
-    • Electronics Engineering<br>
-    • C Programming<br>
-    • Team Collaboration<br>
-    • Debugging & Troubleshooting
-   </p>
-</section>
+      
       
       <section id="two">
         <header class="major">
@@ -145,11 +133,27 @@
         </header>
         <p>
           • Fast and flexible stack to enable modular code packaging<br>
-          • Huge open-source community leads to quick development<br>
-          • Set of tools and libraries for simulations and debugging like RViz or Gazebo<br> 
-          • Easy cross-platform languages of C++ or Python 
+          • Supported by a large open-source community, enabling rapid debugging and development<br>
+          • Includes simulation and visualization tools like RViz and Gazebo for system testing<br> 
+          • Easy cross-platform compatability languages of C++ or Python 
         </p>
       </section>
+
+
+   <section id="rawr">
+        <header class="major">
+          <h2>Final Configuration</h2>
+        </header>
+        <p>
+          Below is a summary of choices for LIMO bot setup:<br>
+          • Tracked wheels. Reason: High grip to crawl over humps<br>
+          • RTAB-Map for SLAM. Reason: 2D and 3D mapping as well as live camera view for visual tracking<br> 
+          • DWA Planner for obstacle avoidance. Reason: Smooth, reactive local planning<br>
+          • Dijkstra Algorithm for path planning. Reason: Stable performance without overloading CPU
+        </p>
+      </section>
+
+
       
       
       <!-- ========== SECTION TWO: PROJECTS ========== -->
