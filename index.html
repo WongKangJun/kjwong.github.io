@@ -138,7 +138,7 @@
       
       <section id="two">
         <header class="major">
-          <h2>Why ROS for this project?</h2>
+          <h2>Why use ROS for this project?</h2>
         </header>
         <p>
           • Fast and flexible stack to enable modular code development, making it easy to build, test and scale robotic systems<br>
@@ -149,18 +149,18 @@
       </section>
 
 
-   <section id="rawr">
-        <header class="major">
-          <h2>Final Configuration</h2>
-        </header>
-        <p>
-          Below is a summary of choices for LIMO bot setup:<br>
-          • Tracked wheels. Reason: High grip to crawl over humps<br>
-          • RTAB-Map for SLAM. Reason: 2D and 3D mapping as well as live camera view for visual tracking<br> 
-          • DWA Planner for obstacle avoidance. Reason: Smooth, reactive local planning<br>
-          • Dijkstra Algorithm for path planning. Reason: Stable performance without overloading CPU
-        </p>
-      </section>
+<section id="rawr">
+  <header class="major">
+    <h2>Final Configuration</h2>
+  </header>
+  <p>
+    Below is a summary of choices for LIMO bot setup:<br>
+    • Tracked wheels. <strong>Reason:</strong> High grip to crawl over humps<br>
+    • RTAB-Map for SLAM. <strong>Reason:</strong> 2D and 3D mapping as well as live camera view for visual tracking<br>
+    • DWA Planner for obstacle avoidance. <strong>Reason:</strong> Smooth, reactive local planning<br>
+    • Dijkstra Algorithm for path planning. <strong>Reason:</strong> Stable performance without overloading CPU
+  </p>
+</section>
 
 
       
@@ -199,7 +199,7 @@
             </video>
             <h3>TF2 TurtleBot Simulation</h3>
             <p>
-              Built a ROS tf2 setup in turtlesim to simulate leader-follower behavior.<br>
+              Built a ROS1 tf2 setup in turtlesim to simulate leader-follower behavior.<br>
               • Used broadcaster to publish turtle1’s transform.<br>
               • Implemented listener to control turtle2.<br>
               • Verified system behavior using key ROS tools:<br>
@@ -234,6 +234,7 @@
             • Tested sending navigation goals and monitored the robot's movement in real time.
             </p>
             <div class="skills">
+  <span>ROS1</span>            
   <span>Gazebo</span>
   <span>TurtleBot3 Burger</span>
   <span>Simulated LiDAR</span>
@@ -256,8 +257,8 @@
               • Used laser scan (/scan) and odometry (/odom) data to create a 2D map of the environment.<br>
               • Saved the map as image and YAML files for future navigation and localization tests.
             </p>
-            <div class="skills">
-              <span>Occupancy Grid Map</span><span>Laser Scan (/scan)</span><span>Odometry (/odom)</span><span>Pose Estimation</span><span>2D Map</span><span>ROS1 TurtleBot3</span><span>gmapping.launch</span><span>Particle Filter (mapping)</span>
+            <div class="skills">                     
+<span>ROS1</span><span>Occupancy Grid Map</span><span>Laser Scan (/scan)</span><span>Odometry (/odom)</span><span>Pose Estimation</span><span>2D Map</span><span>ROS1 TurtleBot3</span><span>gmapping.launch</span><span>Particle Filter (mapping)</span>
             </div>
           </article>
 
@@ -273,6 +274,7 @@
               • Tested localization by setting initial pose and observing robot alignment with the global map in RViz.
             </p>
             <div class="skills">
+<span>ROS1</span>            
 <span>AMCL</span>
 <span>Pose Estimation</span>
 <span>ROS1 TurtleBot3</span>
@@ -371,7 +373,7 @@
   <div class="skills">
 <span>Navigation</span><span>ROS1</span><span>SLAM</span>
   <span>move_base</span><span>DWA</span><span>Dijkstra</span>
-  <span>Tracked Wheels</span><span>Local Planner</span><span>Global Planner</span>    
+  <span>Tracked Wheels</span><span>Local Planner</span><span>Global Planner</span><span>LIMO bot</span>  
   </div>
 </article>
 
@@ -389,7 +391,7 @@
     • Executes an in-place spin to reorient and attempt a new path.<br>
     • Repeats up to 3 times before aborting the goal.<br>  </p>
   <div class="skills">
-    <span>Recovery Behaviour</span><span>Costmap Clearing</span><span>Path Re-planning</span><span>Obstacle Avoidance</span><span>move_base</span><span>Autonomous Navigation</span><span>ROS1</span>
+    <span>Recovery Behaviour</span><span>Costmap Clearing</span><span>Path Re-planning</span><span>Obstacle Avoidance</span><span>move_base</span><span>Autonomous Navigation</span><span>ROS1</span><span>LIMO bot</span> 
   </div>
 </article>
     </div>
@@ -397,12 +399,11 @@
 
 <section id="system-context" style="color: #000;">
   <header class="major">
-    <h2>System Context</h2>
+    <h2>System Context: Applying a Systems Approach</h2>
   </header>
 
   <p>
-    This project operates as a real-life scenario context where learners are expected to demonstrate their competencies to future industry employers. The evaluation is carried out by university professors, who act as stakeholders representing industry standards and delivery expectations.
-  </p>
+To conclude, this section reflects on the system context of the project by applying a systems approach, with reference to SEBoK principles. This project is approached such that it operates like a real-life scenario where learners are expected to demonstrate their competencies to future industry employers. The evaluation is carried out by university professors, who act as stakeholders representing industry standards and delivery expectations.</p>
 
   <ul>
     <li>
