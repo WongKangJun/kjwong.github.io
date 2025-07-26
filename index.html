@@ -157,15 +157,30 @@
     <h2>Final Configuration</h2>
   </header>
 
-  <img src="images/thumbs/LIMObot.jpg" alt="LIMO Bot" style="display: block; margin: 0 auto 1em auto; width: 400px; border-radius: 8px;" />
+  <!-- LIMO image -->
+  <img src="images/thumbs/LIMObot.jpg" alt="LIMO Bot" class="equal-media" 
+       style="max-width: 500px; width: 100%; height: auto; margin-bottom: 1em; border-radius: 10px;" />
 
-  <pre style="font-family: monospace; font-size: 1rem; color: #000;">
-    Below is a summary of choices for LIMO bot setup:<br>
-    • Tracked wheels.                         Reason: High grip to crawl over humps<br>
-    • RTAB-Map for SLAM.                      Reason: 2D and 3D mapping as well as live camera view for visual tracking<br>
-    • DWA Planner for obstacle avoidance.     Reason: Smooth, reactive local planning<br>
-    • Dijkstra Algorithm for path planning.   Reason: Stable performance without overloading CPU
-  </pre>
+  <p>Below is a summary of choices for LIMO bot setup:</p>
+
+  <div style="display: table; width: 100%; margin-top: 1em;">
+    <div style="display: table-row;">
+      <div style="display: table-cell; padding-right: 20px;">• Tracked wheels.</div>
+      <div style="display: table-cell;">Reason: High grip to crawl over humps</div>
+    </div>
+    <div style="display: table-row;">
+      <div style="display: table-cell; padding-right: 20px;">• RTAB-Map for SLAM.</div>
+      <div style="display: table-cell;">Reason: 2D and 3D mapping as well as live camera view for visual tracking</div>
+    </div>
+    <div style="display: table-row;">
+      <div style="display: table-cell; padding-right: 20px;">• DWA Planner for obstacle avoidance.</div>
+      <div style="display: table-cell;">Reason: Smooth, reactive local planning</div>
+    </div>
+    <div style="display: table-row;">
+      <div style="display: table-cell; padding-right: 20px;">• Dijkstra Algorithm for path planning.</div>
+      <div style="display: table-cell;">Reason: Stable performance without overloading CPU</div>
+    </div>
+  </div>
 </section>
 
       
